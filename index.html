@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/style/main.css">
+    <title>Adventure Time</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <nav class="nav-bar secondary-text">
+            <div class="nav-bar-wrapper">
+                <div class="nav-logo-wrapper">
+                    <i class="nav-logo"></i>
+                    <span class="nav-title">Adventure Time</span>
+                </div>
+
+                <div class="nav-menu-wrapper">
+                    <span class="nav-menu-item">Про нас</span>
+                    <span class="nav-menu-item">Новини</span>
+                    <span class="nav-menu-item">Блог</span>
+                    <i class="nav-menu-icon"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="page-wrapper">
+        <section class="registration-section">
+            <div class="registration-form-wrapper">
+
+                <div class="registration-form-image-wrapper">
+                    <img src="/image/ferris-wheel.jpg" alt="" id="attraction-img" class="registration-form-image">
+                </div>
+
+                <!-- <object data="/image/ferris-wheel.jpg" type="image/png" class="registration-form-image"></object> -->
+
+                <div class="form-card flex-column">
+                    <div class="form-wrapper">
+                        <h2 class="form-title">Електронна черга для запису на атракціони</h2>
+
+                        <form action="submit" class="registration-form flex-column">
+                            <label for="name" class="form-label">Ім'я</label>
+                            <input type="text" class="form-input" id="name" name="name" placeholder="Введіть ім'я" required>
+
+                            <label for="phone" class="form-label">Телефон</label>
+                            <input type="tel" class="form-input" id="phone" name="phone"
+                                placeholder="+38 (_) __ __ __" required>
+
+                            <label for="select" class="form-label">Атракціон</label>
+                            <select name="select" id="select" class="form-input">
+                                <option value="ferris-wheel">Оглядове колесо</option>
+                                <option value="carrousel">Карусель</option>
+                                <option value="roller-coaster">Американські гірки</option>
+                                <option value="trampoline">Батут</option>
+                            </select>
+                            <button class="form-submit-button" type="submit">Зареєструватися</button>
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer secondary-text">
+        © 2022 Adventure Time Всі права захищені.
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+
+</html>
